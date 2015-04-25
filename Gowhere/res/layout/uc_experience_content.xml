@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/titlebar_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:text="如何选择合适的投资产品"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/listviewbg"
+            android:clickable="true"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_tel"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="类别：基础理财"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#C4C4C4" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/listviewbg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/textView_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none" 
+				android:maxLines="100" 
+				android:scrollHorizontally="false" 
+                android:text="        赚钱是重要的但是更重要的是要懂得如何留住这些钱，让其保值增值。许多人说投资有风险，其实投资本身不会有风险，失控的投资才有风险。投资本身并不冒险，缺乏投资技巧的投资者才会导致投资的高风险。高手理财投资者总是能未雨绸廖，而刚入门的投资者却总想猜测未来会发生什么，什么时间会发生。投资有风险，究其原因主要有三点:
+1、没有接受过如何成为投资者的专门训练。
+2、多数投资者缺乏控制力。
+3、多数投资者不了解本身自己的资金情况和操作习惯。\n
+        完成了“了解自己”和“了解了产品”两个步骤后投资者最后需要做的就是精准匹配自身的理财需求和合适自己的理财产品。
+"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    
+
+        <LinearLayout
+            android:id="@+id/hotel_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listviewbg"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:orientation="vertical" >
+        </LinearLayout>
+       
+    </LinearLayout>
+
+</ScrollView>

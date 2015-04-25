@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+  <include layout="@layout/paymentbar" />
+  
+
+    
+ <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:text="付款方信息" />
+
+    <RelativeLayout
+        android:id="@+id/account0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/preference_first_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+    
+
+        <EditText
+            android:id="@+id/account1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="请输入卡号" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/trasmit0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_last_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <EditText
+            android:id="@+id/transmit1" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="请输入转账金额" />
+        
+    </RelativeLayout>
+<TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="收款方信息" />
+  
+        <RelativeLayout
+        android:id="@+id/money0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_first_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+       
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="收款人姓名" />
+
+
+        <TextView
+            android:id="@+id/money1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="卡瑞"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+       
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="收款人账户" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint=" 6217 8707 0000 0000 001"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+       
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="选择币种" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="暂只支持人民币"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+        
+        
+      <RelativeLayout
+        android:id="@+id/sure"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_last_item"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+    <Button 
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+		android:background="@drawable/button_orange"        
+        android:text="确认支付"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

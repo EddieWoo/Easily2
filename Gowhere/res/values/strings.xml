@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">轻松理</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+        <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MostMood</string>
+    <string name="buttom_home">收藏</string>
+    <string name="buttom_wall">理财广场</string>
+    <string name="buttom_camera">首页</string>
+    <string name="buttom_message">个人中心</string>
+    <string name="buttom_me">设置</string>
+    <string name="choose_text">选择</string>
+    
+    <string name="search_button">查询</string>
+	<string name="project_search_hint">请输入查询的名称</string>
+
+</resources>

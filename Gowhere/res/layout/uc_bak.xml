@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar_home" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:text="亲爱的轻松理用户：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="欢迎您使用轻松理，进入个人中心后，您需要输入您在中银易商的用户名与密码，会涉及到您的银行卡、投资项目及理财产品的安全，请确保手机环境的安全。如果您确认进入个人中心，请点击下方按钮~~" />
+
+            
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_but"
+                android:text="进入我的个人中心" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

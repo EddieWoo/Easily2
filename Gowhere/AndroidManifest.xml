@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spring.gowhere"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.spring.gowhere.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+        <meta-data  
+        android:name="com.baidu.lbsapi.API_KEY"  
+        android:value="STD2vhrNDm1lTutmvIvzc06W" />  
+        
+        <activity
+            android:name="com.spring.gowhere.InitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AirOrder"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.spring.pic.PicActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name=".HotelActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity android:name=".HotelSearch" >
+        </activity>
+        <activity android:name=".HotelDetail" >
+        </activity>
+        <activity android:name=".HotelTab" android:theme="@style/translucent"
+             >
+        </activity>
+        
+        <activity
+           android:name="com.spring.framgent.HouseActivity" >
+        </activity> 
+        <activity
+           android:name="com.example.androidhive.CustomizedListView" >
+        </activity> 
+ <activity
+           android:name="com.example.androidhive.webview" >
+        </activity> 
+        
+         <activity android:name="com.spring.usecenter.LoginActivity" >
+        </activity>
+        <activity
+            android:name="com.spring.usecenter.ProjectActivity" >
+        </activity>
+        <activity
+            android:name="com.spring.usecenter.SearchProjectSearch" >
+        </activity>
+        <activity
+            android:name="com.spring.usecenter.SearchUnProjectSearch" >
+        </activity>
+         <activity
+            android:name="com.spring.usecenter.AboutActivity" >
+        </activity>
+        <activity
+            android:name="com.spring.usecenter.ProductActivity" >
+        </activity>
+        <activity
+            android:name="com.spring.usecenter.SearchProductSearch" >
+        </activity>
+        <activity
+            android:name="com.spring.usecenter.SearchUnProductSearch" >
+        </activity>
+        <activity
+            android:name="com.spring.usecenter.CardActivity" >
+        </activity>
+        <activity
+            android:name="com.spring.usecenter.MyExperienceActivity" >
+        </activity>
+        <activity
+            android:name="com.spring.usecenter.ExperienceContent" >
+        </activity>
+        <activity
+            android:name="com.spring.usecenter.IncomeActivity" >
+        </activity>
+        <activity
+            android:name="com.spring.usecenter.MyCardActivity" >
+        </activity>
+        <activity
+            android:name="com.spring.gowhere.keywords" >
+        </activity>
+         <activity
+            android:name="com.spring.gowhere.category" >
+        </activity>
+         <activity
+            android:name="com.spring.framgent.newproject" >
+        </activity>
+        <activity
+            android:name="com.spring.gowhere.payment" >
+        </activity>
+        <activity
+            android:name="com.spring.gowhere.TransferActivity" >
+        </activity>
+         <activity
+            android:name="com.spring.gowhere.newprojectok" >
+        </activity>
+          <activity
+            android:name="com.spring.gowhere.tolerance" >
+        </activity>
+        
+          <activity
+            android:name="com.spring.framgent.financialproduct" >
+        </activity>
+          <activity
+            android:name="com.spring.framgent.productdetail" >
+        </activity>
+        
+          
+    </application>
+    
+<uses-permission android:name="android.permission.GET_ACCOUNTS" />  
+<uses-permission android:name="android.permission.USE_CREDENTIALS" />  
+<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />  
+<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />  
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
+<uses-permission android:name="android.permission.INTERNET" />  
+<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />  
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />  
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />  
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+<uses-permission android:name="android.permission.BROADCAST_STICKY" />  
+<uses-permission android:name="android.permission.WRITE_SETTINGS" />  
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+</manifest>

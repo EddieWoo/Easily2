@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar_left" />
+
+<!--  投资项目搜索的底部栏目    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar_center_normal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/editview_bg"
+            android:hint="项目名称"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!-- ¥ -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linear_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-3dp"
+            android:background="@drawable/tab_while_bar_bg"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:background="@drawable/hotel_bottom"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/hotel_filter_recommends_normal"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/title"
+                    style="?android:attr/tabWidgetStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="截止日期排序"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/hotel_bottom"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/icon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/flight_price_sort_disable"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/title1"
+                    style="?android:attr/tabWidgetStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资额度排序"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/linear2"
+                android:clickable="true"
+                android:background="@drawable/hotel_bottom"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hotel_filter_level_normal"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    style="?android:attr/tabWidgetStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="热度排序"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:id="@+id/linear3"
+                android:background="@drawable/hotel_bottom"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/icon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hotel_filter_distance_normal"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/title3"
+                    style="?android:attr/tabWidgetStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="为我推荐"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:divider="@drawable/tip_line"
+            android:scrollingCache="false" >
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>
